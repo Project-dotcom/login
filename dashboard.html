@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Dashboard SAPA UPI</title>
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="side-header">
+          <h3 class="header-title">
+            <span class>SAPA UPI</span>
+            <hr class="divider">
+          </h3>
+        </div>
+    <div class="profile" onclick="goToProfile()">
+      <div class="profile-img" style="background-image: url('img/3.jpeg')"></div>
+      <h4>Febryanti Hidayat</h4>
+      <small>2303816</small>
+    </div>
+    <div class="side-menu">
+        <ul>
+          <li>
+            <a href="formulir.html">
+              <span class="las la-edit"></span>
+              <small>Formulir Pengaduan</small>
+            </a>
+          </li>
+          <li>
+            <a href="pelacak.html">
+              <span class="las la-search"></span>
+              <small>Pelacak Status</small>
+            </a>
+          </li>
+          <li class="logout-btn">
+            <a href="#" onclick="logout()">
+              <span class="las la-sign-out-alt"></span>
+              <small>Logout</small>
+            </a>
+          </li>          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <header>
+        <div class="page-header">
+            <div class="welcome-message">
+                <h2>Selamat Datang</h2>
+                <p> Dashboard SAPA UPI - Sistem Aspirasi & Pengaduan Infrastruktur</p>
+              </div>
+              
+            <div class="search-bar">
+              <input type="text" placeholder="Cari pengaduan...">
+              <span class="las la-search"></span>
+            </div>
+
+
+    <section class="notes-section">
+        <div class="note-grid">
+          <div class="note">
+            <h3>Fasilitas Rusak di Gedung Baru</h3>
+            <p><strong>Pengirim:</strong> Rina Permata</p>
+            <p><strong>Tanggal:</strong> 12 April 2025</p>
+            <span class="status">Diproses</span>
+          </div>
+          <div class="note">
+            <h3>Kebersihan Toilet</h3>
+            <p><strong>Pengirim:</strong> Agus Salim</p>
+            <p><strong>Tanggal:</strong> 11 April 2025</p>
+            <span class="status">Selesai</span>
+          </div>
+          <div class="note">
+            <h3>Keluhan Smartboard</h3>
+            <p><strong>Pengirim:</strong> Siti Aminah</p>
+            <p><strong>Tanggal:</strong> 10 April 2025</p>
+            <span class="status">Menunggu</span>
+          </div>
+        </div>
+    </section>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
