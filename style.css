@@ -178,6 +178,12 @@
       padding: 2rem 4rem;
     }
   }
+@media (max-width: 480px) {
+  .logo-screen img {
+    width: 160px;
+  }
+}
+
 /* Tambahan style untuk logo dan tagline di login-box */
 .logo-info {
     display: flex;
@@ -190,7 +196,10 @@
     width: 150px; /* sesuaikan */
     margin-bottom: 0.5rem;
   }
-  
+.logo-screen img {
+  width: 200px; /* sebelumnya 130px */
+  animation: bounce 1.2s infinite;
+}
   .tagline {
     color: #6D2323; /* warna teks sesuai palette */
     font-size: 0.9rem;
