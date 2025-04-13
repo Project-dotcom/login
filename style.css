@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    background: #FEF9E1;
+    overflow: hidden;
+  }
+  
+  /* Global screen wrapper */
+  .screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+  }
+  
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Splash screen */
+  .logo-screen {
+    background: #FEF9E1;
+    flex-direction: column;
+  }
+  
+  .logo-screen img {
+    width: 130px;
+    animation: bounce 1.2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Welcome screen */
+  .welcome-screen {
+    background: #E5D0AC;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .welcome-screen h1 {
+    font-size: 2rem;
+    color: #6D2323;
+    margin-bottom: 0.5rem;
+  }
+  
+  .welcome-screen p {
+    color: #6D2323;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 2rem;
+    background: #A31D1D;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #6D2323;
+  }
+  
+  /* Login screen */
+  .login-screen {
+    background: #FEF9E1;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  .login-box {
+    background: #E5D0AC;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 400px;
+    color: #6D2323;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #6D2323;
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 4px;
+    color: #6D2323;
+    font-weight: 500;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid #A31D1D;
+    background-color: #fff;
+    color: #6D2323;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #A31D1D;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+  }
+  
+  .login-box button:hover {
+    background: #6D2323;
+  }
+  
+  .message {
+    margin-top: 1rem;
+    text-align: center;
+    color: #A31D1D;
+    font-weight: bold;
+    display: none;
+  }
+  
+  .message.success {
+    color: green;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .login-box {
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+  
+    .login-box h2 {
+      font-size: 1.3rem;
+    }
+  
+    .btn, .login-box button {
+      font-size: 0.95rem;
+      padding: 0.7rem 1.5rem;
+    }
+  
+    .input-group input {
+      font-size: 0.95rem;
+      padding: 0.7rem;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .login-screen, .welcome-screen, .logo-screen {
+      padding: 2rem 4rem;
+    }
+  }
+/* Tambahan style untuk logo dan tagline di login-box */
+.logo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem; /* jarak ke h2 */
+  }
+  
+  .logo {
+    width: 70px; /* sesuaikan */
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    color: #6D2323; /* warna teks sesuai palette */
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  

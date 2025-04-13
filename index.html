@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAPA UPI - Masuk</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+  <!-- Splash Screen -->
+  <div class="screen logo-screen" id="logoScreen">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_UPI.png" alt="Logo SAPA UPI">
+  </div>
+
+  <!-- Welcome Screen -->
+  <div class="screen welcome-screen hidden" id="welcomeScreen">
+    <h1>Selamat Datang</h1>
+    <p>SAPA UPI - Sistem Aspirasi & Pengaduan Infrastruktur</p>
+    <button class="btn" onclick="goToLogin()">Masuk</button>
+  </div>
+
+  <!-- Hanya bagian login screen yang diupdate -->
+<!-- Ganti bagian ini di kode HTML kamu sebelumnya -->
+
+<!-- Login Screen -->
+<div class="screen login-screen hidden" id="loginScreen">
+  <div class="login-box">
+
+    <!-- Tambahkan wrapper info logo & fungsi -->
+    <div class="logo-info">
+      <!-- Ubah src sesuai dengan file/logo yang kamu miliki -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_UPI.png" alt="SAPA UPI" class="logo" />
+      <p class="tagline">Sistem Aspirasi & Pengaduan Infrastruktur Kampus</p>
+    </div>
+
+    <h2>Login Pengguna</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" placeholder="Masukkan NIM" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Kombinasi huruf & angka" required>
+      </div>
+      <button type="submit">Masuk</button>
+      <div id="loginMessage" class="message"></div>
+    </form>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
