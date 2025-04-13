@@ -197,7 +197,7 @@
     margin-bottom: 0.5rem;
   }
 .logo-screen img {
-  width: 300px; /* sebelumnya 130px */
+  width: 350px; /* sebelumnya 130px */
   animation: bounce 1.2s infinite;
 }
   .tagline {
