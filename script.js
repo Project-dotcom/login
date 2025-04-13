@@ -35,7 +35,7 @@
     }
 
     if (nim === "2303699" && password === "abc123") {
-      message.textContent = 'Login berhasil! Mengarahkan ke dashboard...';
+      message.textContent = 'Login berhasil!';
       message.style.display = 'block';
       message.classList.add('success');
 
